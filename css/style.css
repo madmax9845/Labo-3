@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/*********************************************/
+/* Fichier : examenFinal.css                */
+/* Type : Document CSS                       */
+/* Titre : Examen en html et en CSS           */
+/* Auteur : Maxime Malette                       */
+/* Date de création : 08/12/2022  */
+/*********************************************/
+
+/* Mise en page général*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #a2091b;
+}
+
+main {
+    background-color: white;
+    width: 1100px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.cote {
+    display: flex;
+}
+
+/*mise en forme du header*/
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header div:nth-of-type(2) {
+    width: 850px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    padding: 2px;
+}
+
+h1 {
+    color: #00739f;
+    font-size: 4rem;
+}
+
+/*mise en forme du nav*/
+
+nav {
+    width: 25%;
+
+}
+
+nav li {
+    list-style-type: none;
+    padding: 3px 10px;
+}
+
+nav li>a {
+    padding: 3px 0;
+    display: block;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: #1e222b;
+    border: 10px ridge #9da3b9;
+    width: 100%;
+}
+
+/*effet du passage de la souris sur les boutons du nav*/
+nav li>a:hover {
+    background-color: #00739f;
+}
+
+/*mise en forme du formulaire*/
+
+article {
+    width: 75%;
+}
+
+article h2 {
+    text-align: center;
+}
+
+fieldset:first-of-type label {
+    width: 25%;
+}
+
+fieldset:first-of-type div {
+    display: flex;
+    justify-content: end;
+}
+
+#prenom,
+#nom {
+    width: 34%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#courriel,
+#téléphone {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+}
+
+legend {
+    margin: 5px;
+}
+
+button {
+    width: 50%;
+    display: flex;
+    margin: 0;
+    padding: 5px;
+    justify-content: center;
+
+}
+
+/*mise en forme du footer*/
+
+footer {
+    background-color: #1e222b;
+    color: white;
+}
+
+aside {
+    align-items: center;
+}
+
+footer div {
+    border-right: solid 1px white;
+    width: 55%;
+    padding: 5px;
+}
+
+footer p {
+    font-size: small;
+    padding: 5px;
+}
+
+footer img {
+    padding: 10px;
+}
+
+footer h2 {
+    padding: 10px;
+}

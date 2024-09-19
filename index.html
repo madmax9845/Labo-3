@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Historique des jeux vidéos</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div>
+                <img src="images/banniere.jpg" alt="image" />
+            </div>
+            <div>
+                <h1>Historique des jeux vidéos</h1><br />
+                <p><strong>Décembre 2021</strong></p><br>
+                <p>Créé par: MAXIME MALETTE</p>
+            </div>
+        </header>
+        <section class="cote">
+            <nav>
+                <ul>
+                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#Ligne">Ligne du temps</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>CONTACTEZ-MOI</h2>
+
+                <p>Veuillez compléter le formulaire suivant pour toutes questions sur les jeux vidéos. Les champs
+                    marqués
+                    d'un
+                    astérisque sont obligatoires.</p>
+
+                <form method="post" action="index.html">
+                    <fieldset>
+                        <legend><strong>Informations personnelles</strong></legend><br />
+                        <div>
+                            <label>Nom complet *:</label><input type="text" id="prenom" name="Prénom"
+                                placeholder="Prénom" required />
+                            <input type="text" id="nom" name="Nom" placeholder="Nom de famille" required /><br /><br />
+                        </div>
+                        <div>
+                            <label>Courriel *:</label><input type="email" id="courriel" name="Courriel"
+                                placeholder="exemple@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"
+                                required /><br /><br />
+                        </div>
+                        <div>
+                            <label>Numéro de téléphone *:</label><input type="text" id="téléphone" name="téléphone"
+                                placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><br /><br />
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>Sondages et questions</strong></legend><br />
+
+                        <label>Comment voulez-vous être contacté</label> : <input type="radio" id="choix1" name="choix"
+                            value="Courriel" />
+                        <label for="choix1"> Courriel</label>
+
+                        <input type="radio" id="choix2" name="choix" value="Téléphone" checked />
+                        <label for="choix2"> Téléphone</label>
+
+                        <input type="radio" id="choix3" name="choix" value="Texto" />
+                        <label for="choix3"> Texto</label>
+
+                        <p>Questions ou commentaires :</p>
+                        <textarea name="adresse"></textarea>
+
+                    </fieldset><br />
+
+                    <button type="reset">Effacer les informations</button>
+                    <button type="submit">Envoyer la demande</button><br />
+                </form>
+            </article>
+        </section>
+        <footer>
+            <h2>SAVIEZ-VOUS QUE?</h2>
+            <aside class="cote">
+                <img src="images/luigi.png" alt="image" />
+                <div>
+                    <h3>1967 Les jeux vidéo rencontrent la télévision</h3>
+
+                    <p>Ralph Baer conçoit et construit la « Brown Box », un prototype de console de jeux vidéo qui
+                        permet aux utilisateurs de jouer sur des écrans de télévision.</p>
+                </div>
+                <p>Cégep de Sherbrooke<br />Techniques de l'informatique<br /> Création de pages Web</p>
+
+                <img src="images/atari.png" alt="image" />
+            </aside>
+        </footer>
+    </main>
+</body>
