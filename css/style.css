@@ -87,7 +87,7 @@ nav li>a {
 
 /*effet du passage de la souris sur les boutons du nav*/
 nav li>a:hover {
-    background-color: #00739f;
+    background-color: red;
 }
 
 /*mise en forme du formulaire*/
